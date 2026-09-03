@@ -71,23 +71,23 @@ int main() {
         bool sL = gpio_get(SENSOR_L);
 
         if (sL && sR) {
-            engine_left.forward();
-            engine_right.forward();
+            engine_left.to_stop();
+            engine_right.to_stop();
         } 
 
         else if (!sL && sR) {
-            engine_left.to_stop();
+            engine_left.reverse();
             engine_right.forward();
         }
 
         else if (sL && !sR) {
             engine_left.forward();
-            engine_right.to_stop();
+            engine_right.reverse();
         }
 
         else {
-            engine_left.to_stop();
-            engine_right.to_stop();
+            engine_left.forward();
+            engine_right.forward();
         }
     }
 }
