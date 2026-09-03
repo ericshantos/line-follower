@@ -85,6 +85,13 @@ int main() {
             engine_right.reverse();
         }
 
+        else if (!sL && !sR) {
+            engine_left.reverse();
+            engine_right.reverse();
+
+            sleep_ms(1000);
+        }
+
         else {
             engine_left.forward();
             engine_right.forward();
