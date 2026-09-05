@@ -38,6 +38,7 @@ add_executable(rastro
     src/main.cpp
     src/Engine.cpp
     src/Sensor.cpp
+    src/AnalogSensor.cpp
 )
 
 # Program name and version
@@ -51,6 +52,7 @@ pico_enable_stdio_usb(rastro 0)
 # Link libraries
 target_link_libraries(rastro
     pico_stdlib
+    hardware_adc
 )
 
 # Include directories

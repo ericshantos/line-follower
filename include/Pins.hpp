@@ -18,6 +18,11 @@ namespace Pins {
         constexpr uint LEFT = 17;
         constexpr uint RIGHT = 16;
     };
+
+    namespace Analog {
+        constexpr uint LEFT = 26;
+        constexpr uint RIGHT = 27;
+    }
 }
 
 #endif
