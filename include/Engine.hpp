@@ -1,6 +1,10 @@
+#pragma once
+
 #ifndef ENGINE_HPP
 #define ENGINE_HPP
 
+
+#include <stdint.h>
 #include "pico/stdlib.h"
 
 class Engine {
